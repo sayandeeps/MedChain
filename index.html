@@ -570,14 +570,14 @@
             contract.methods.searchPatient(patientAddress).call({ from: account }, (error, result) => {
                 if (error) {
                   alert("You are not authorised")
-                  document.getElementById('name').innerText = "No values to show";
-                  document.getElementById('age').innerText = "No values to show";
-                  document.getElementById('gender').innerText = "No values to show";
-                   document.getElementById('height').innerText = "No values to show";
-                   document.getElementById('weight').innerText = "No values to show";
-                   document.getElementById('phoneNo').innerText = "No values to show";
-                   document.getElementById('patientAddressResult').innerText = "No values to show";
-                   document.getElementById('dob').innerText = "No values to show";
+                  document.getElementById('name').innerText = "No values";
+                  document.getElementById('age').innerText = "No values";
+                  document.getElementById('gender').innerText = "No values";
+                   document.getElementById('height').innerText = "No values";
+                   document.getElementById('weight').innerText = "No values";
+                   document.getElementById('phoneNo').innerText = "Novalues";
+                   document.getElementById('patientAddressResult').innerText = "No values";
+                   document.getElementById('dob').innerText = "No values";
                 } else {
                     const patientName = result[0];
                     const age = result[1];
